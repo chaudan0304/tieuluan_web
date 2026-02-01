@@ -46,6 +46,13 @@ body {
   padding-top: 70px;
 }
 
+/* Page container to center content and limit width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -143,7 +150,9 @@ header:hover {
   align-items: center;
   gap: 40px;
   flex: 1;
-  margin: 0 40px;
+  margin: 0 auto;
+  max-width: 1200px; /* center header nav */
+  width: 100%;
 }
 
 nav.menu {
@@ -445,8 +454,11 @@ nav.menu li:hover .sub-menu {
 
 /* Category Left - Sidebar */
 .category-left {
-  flex: 0 0 15%;
+  flex: 0 0 220px; /* fixed sidebar width for consistent layout */
   padding-right: 20px;
+  position: sticky;
+  top: 90px; /* below header */
+  align-self: start;
 }
 
 .category-left ul {
@@ -591,8 +603,9 @@ nav.menu li:hover .sub-menu {
 /* Product Grid */
 .category-right-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  align-items: start;
 }
 
 .category-right-content-item {
@@ -605,6 +618,9 @@ nav.menu li:hover .sub-menu {
   display: flex;
   flex-direction: column;
   position: relative;
+  min-height: 360px; /* ensure consistent card height */
+  justify-content: space-between;
+  padding-bottom: 12px;
 }
 
 .category-right-content-item:hover {
@@ -633,15 +649,25 @@ nav.menu li:hover .sub-menu {
   opacity: 1;
 }
 
-.category-right-content-item img {
+.category-right-content-item .product-media {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: var(--transition);
+  padding-top: 66.666%; /* 3:2 aspect ratio */
+  position: relative;
+  overflow: hidden;
+  background: #fff;
 }
 
-.category-right-content-item:hover img {
-  transform: scale(1.08);
+.category-right-content-item .product-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s var(--transition);
+}
+
+.category-right-content-item:hover .product-media img {
+  transform: scale(1.06);
 }
 
 .category-right-content-item h1 {
@@ -658,6 +684,15 @@ nav.menu li:hover .sub-menu {
   font-size: 14px;
   font-weight: 700;
   color: var(--primary);
+  margin-top: 8px;
+}
+
+/* Fallback for images not wrapped in .product-media */
+.category-right-content-item > img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
 }
 /* ============================================
    BUTTONS & CTA
