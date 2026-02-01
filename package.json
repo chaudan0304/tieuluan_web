@@ -1,0 +1,23 @@
+{
+  "name": "dcshop-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "sitemap": "node scripts/generate-sitemap.js",
+    "optimize-images": "node scripts/optimize-images.js",
+    "lint:html": "npx html-validate . --ext .html",
+    "lint:css": "npx stylelint '**/*.css' || true",
+    "lint:js": "npx eslint . --ext .js || true",
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+    "start": "npx live-server dist --port=8080 --open=./index.html"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "html-validate": "^8.0.0",
+    "stylelint": "^15.0.0",
+    "stylelint-config-standard": "^30.0.0",
+    "live-server": "^1.2.2",
+    "sharp": "^0.32.0"
+  }
+}
