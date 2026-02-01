@@ -20,7 +20,7 @@
 
 <body>
     <header>
-        <div class="hamburger"> <i class="fas fa-bars"></i> </div>
+        <button class="hamburger" aria-label="Mở menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
         <div class="logo"> <a href="index.html"> <img src="images/dcshoplogo.png" alt="DCShop Logo"> </a> </div>
         <div class="menu-container">
             <nav class="menu" aria-label="Main navigation">
@@ -34,10 +34,12 @@
                 </ul>
             </nav>
             <div class="other">
-                <li> <input type="text" placeholder="Tìm kiếm..." aria-label="Tìm kiếm"> <i class="fas fa-search"></i>
-                </li>
-                <li> <a href="#"><i class="fa fa-paw"></i></a> </li>
-                <li> <a href="#"><i class="fa fa-user"></i></a> </li>
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
+                    <button class="search-btn" aria-label="Tìm kiếm"><i class="fas fa-search" aria-hidden="true"></i></button>
+                </div>
+                <a href="#" class="icon" aria-label="Yêu thích"><i class="fa fa-paw" aria-hidden="true"></i></a>
+                <a href="#" class="icon" aria-label="Tài khoản"><i class="fa fa-user" aria-hidden="true"></i></a>
             </div>
         </div>
     </header> <!--Phần danh mục các sản phẩm(category)-->
