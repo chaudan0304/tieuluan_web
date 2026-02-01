@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="DCShop - Cửa hàng thương mại điện tử cung cấp các sản phẩm điện thoại, laptop, PC chính hãng, giá tốt.">
+        <title>Website- DCShop</title>
+        <!--Liên kết css-->
+        <link rel="stylesheet" href="style.css">
+        <!--Hiệu ứng-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <!--Font chữ và Icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">        
+    </head>
+
+    <body>
+        <header>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/dcshoplogo.png">
+                </a>
+            </div>                                          
+
+            <div class="menu-container">
+                <div class="menu">
+                    <li><a href="index.html">TRANG CHỦ</a></li>                                           
+                    
+                    <li><a href="categoryDT.html">ĐIỆN THOẠI</a>
+                        
+                    </li>
+
+                    <li><a href="categoryLT.html">LAPTOP</a>
+                        <ul class="sub-menu">
+                            <li><a href="#HP">HP</a></li>
+                            <li><a href="#DELL">Dell</a></li>
+                            <li><a href="#MSI">MSI</a></li>                            
+                        </ul>
+                    </li>
+
+                    <li><a href="categoryPC.html">PC</a>
+                        
+                    </li>
+
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="#tintuc">TIN TỨC</a></li>
+                </div>
+                
+                <div class="other">
+                    <li>
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <i class="fas fa-search"></i>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-paw"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-user"></i></a>
+                    </li>
+                </div>
+            </div>    
+        </header>
+        
+        <!--Phần danh mục các sản phẩm(category)-->
+        <section class="category">
+            <div class="container">
+                <div class="category-top row">
+                    <p>Trang chủ</p> <span>&#10230; </span> <p>Sản phẩm</p> <span>&#10230; </span> <p>Laptop</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="category-left row">
+                        <ul>
+                            <li class="category-left-li"><a href="categoryDT.html">Điện thoại</a></li> 
+                            
+                            <li class="category-left-li"><a href="categoryLT.html">Laptop</a>
+                                <ul>
+                                    <li><a href="#HP">HP</a></li>
+                                    <li><a href="#DELL">Dell</a></li>
+                                    <li><a href="#MSI">MSI</a></li> 
+                                </ul>
+                            </li>                           
+                            
+                            <li class="category-left-li"><a href="categoryPC.html">PC</a></li>                               
+                            
+                        </ul>
+                    </div>
+
+                    <div class="category-right row">
+                        <div class="category-right-top-item" id="HP">
+                            <p>LAPTOP HP</p>
+                        </div>
+                        <div class="category-right-top-item">
+                            <button><span>Bộ lọc</span> <i class="fas fa-sort-down"></i></button>
+                        </div>
+                        <div class="category-right-top-item">
+                            <select name="" id="">
+                                <option value="">Sắp xếp</option>
+                                <option value="">Giá thấp đến cao</option>
+                                <option value="">Giá cao xuống thấp</option>
+                            </select>
+                        </div>
+
+                        <!-- Danh mục sản phẩm -->
+                        <div class="category-right-content row">
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/lt1.png" alt="">
+                                <h1>HP 15 fd0303TU i3 1315U (A2NL4PA)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/lt2.png" alt="">
+                                <h1>HP 15 fc0085AU R5 7430U (A6VV8PA)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/lt3.png" alt="">
+                                <h1>HP 245 G10 R5 7530U (A20TDPT)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/lt1.png" alt="">
+                                <h1>HP 15 fd0234TU i5 1334U (9Q969PA)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/lt2.png" alt="">
+                                <h1>HP 240 G9 i5 1235U (AG2J7AT)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/lt3.png" alt="">
+                                <h1>HP Pavilion 15 eg3093TU i5 1335U (8C5L4PA)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/lt1.png" alt="">
+                                <h1>HP Gaming VICTUS 15 fb1022AX R5 7535HS</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/lt2.png" alt="">
+                                <h1>HP Gaming VICTUS 15 fa1139TX i5 12450H</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/lt3.png" alt="">
+                                <h1>HP 240 G9 i5 1235U (9T2G2PT)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                        </div>
+
+                        <!--DELL-->
+                        <div class="category-right-top-item" id="DELL">
+                            <p>LAPTOP DELL</p>
+                        </div>
+
+                        <div class="category-right-content row">
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/dell1.png" alt="">
+                                <h1>Dell Inspiron 15 3520 i5 1235U (N5I5052W1)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/dell2.png" alt="">
+                                <h1>Dell Inspiron 15 3520 i5 1235U</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/dell3.png" alt="">
+                                <h1>Dell Inspiron 15 3520 i5 1235U (N3520-i5U165W11BLU-FP)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/dell1.png" alt="">
+                                <h1>Dell Vostro 3530 i5 1335U (80GG93)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/dell2.png" alt="">
+                                <h1>Dell Inspiron 15 3520 i5 1235U (71043883)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/dell3.png" alt="">
+                                <h1>Dell Inspiron 15 3530 i5 1334U (N5I5340W1)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/dell1.png" alt="">
+                                <h1>Dell Inspiron 16 5640 Core 7 150U (KHPF5)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/dell2.png" alt="">
+                                <h1>Dell Inspiron 15 3520 i5 1235U (71027003)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/dell3.png" alt="">
+                                <h1>Dell Vostro 15 3520 i5 1235U (V3520-i5U165W11GRU)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                        </div>
+
+                        <!--MSI-->
+                        <div class="category-right-top-item" id="MSI">
+                            <p>LAPTOP MSI</p>
+                        </div>
+
+                        <div class="category-right-content row">
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/msi1.png" alt="">
+                                <h1>MSI Gaming GF63 Thin 12VE i5 12450H (460VN)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/msi2.png" alt="">
+                                <h1>MSI Gaming Thin 15 B12UCX i5 12450H (2046VN)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/msi3.png" alt="">
+                                <h1>MSI Gaming Katana 15 B13UDXK i7 13620H (2077VN)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/msi1.png" alt="">
+                                <h1>MSI Modern 14 C13M i5 1335U (611VN)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/msi2.png" alt="">
+                                <h1>MSI Gaming Bravo 15 B7ED R5 7535HS (010VN)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/msi3.png" alt="">
+                                <h1>MSI Gaming Cyborg 15 A13VEK i7 13620H (1423VN)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/msi1.png" alt="">
+                                <h1>MSI Gaming Katana 15 B13VFK i7 13620H (676VN)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/msi2.png" alt="">
+                                <h1>MSI Gaming Katana A15 AI B8VG R7 8845HS (465VN)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imageLT/msi3.png" alt="">
+                                <h1>MSI Gaming Stealth 14 AI Studio A1VFG Ultra 7 155H</h1>
+                                <p>18.790.000 đồng</p>
+                            </div>
+                        </div>  
+
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <section class="app-container">
+            <p>Tải ứng dụng DCShop tại</p>
+            <div class="app-google">
+                <a href="https://www.apple.com/vn/app-store/"><img src="images/appstore.png"></a>
+                <a href="https://play.google.com/store"><img src="images/chplay.png"></a>
+            </div>
+            <p>Nhận tin nhắn của DCShop tại</p>
+            <input type="text" placeholder="Nhập email của bạn tại đây...">
+        </section>
+
+        <footer>
+            <div class="footer-top">
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                </li>
+            </div>
+    
+            <div class="footer-center" id="tintuc">
+                <p>Cửa hàng DCShop với số đăng ký kinh doanh: 0120345678 <br>
+                    Địa chỉ đăng ký: 32 Lê Lợi, P. Phú Hội, Thành phố Huế - 0123 456 789.<br>
+                    Đặt hàng online: <b>0123 456 789</b>.
+                </p>
+            </div>
+            
+            <div class="footer-bottom">
+                ©DCShop All rights reserved
+            </div>
+        </footer>
+
+    </body>
+
+    <script src="javascrip.js"></script>
+</html>

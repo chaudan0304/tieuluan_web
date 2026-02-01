@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="DCShop - Cửa hàng thương mại điện tử cung cấp các sản phẩm điện thoại, laptop, PC chính hãng, giá tốt.">
+        <title>Website- DCShop</title>
+        <link rel="website icon" type="png" href="images/dcshoplogo.png">
+        <!--Liên kết css-->
+        <link rel="stylesheet" href="style.css">
+        <!--Hiệu ứng-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <!--Font chữ và Icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">        
+    </head>
+
+    <body>
+        <header>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/dcshoplogo.png">
+                </a>
+            </div>                                          
+
+            <div class="menu-container">
+                <div class="menu">
+                    <li><a href="index.html">TRANG CHỦ</a></li>                                           
+                    
+                    <li><a href="categoryDT.html">ĐIỆN THOẠI</a>
+                        
+                    </li>
+
+                    <li><a href="categoryLT.html">LAPTOP</a>
+                        
+                    </li>
+
+                    <li><a href="categoryPC.html">PC</a>
+                        <ul class="sub-menu">
+                            <li><a href="#PC">THÂN MÁY PC</a></li>
+                            <li><a href="#SS">MÀN HÌNH SAMSUNG</a></li>
+                            <li><a href="#LG">MÀN HÌNH LG</a></li>
+                            <li><a href="#AS">MÀN HÌNH ASUS</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="#tintuc">TIN TỨC</a></li>
+                </div>
+                
+                <div class="other">
+                    <li>
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <i class="fas fa-search"></i>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-paw"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-user"></i></a>
+                    </li>
+                </div>
+            </div>    
+        </header>
+        
+        <!--Phần danh mục các sản phẩm(category)-->
+        <section class="category">
+            <div class="container">
+                <div class="category-top row">
+                    <p>Trang chủ</p> <span>&#10230; </span> <p>Sản phẩm</p> <span>&#10230; </span> <p>PC</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="category-left row">
+                        <ul>
+                            <li class="category-left-li"><a href="categoryDT.html">Điện thoại</a></li> 
+                            
+                            <li class="category-left-li"><a href="categoryLT.html">Laptop</a></li>                           
+                            
+                            <li class="category-left-li"><a href="categoryPC.html">PC</a>
+                                <ul>
+                                    <li><a href="#">Thân máy PC</a></li>
+                                    <li><a href="#">Màn hình</a></li>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">Asus</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="category-right row">
+                        <div class="category-right-top-item" id="PC">
+                            <p>THÂN MÁY PC</p>
+                        </div>
+                        <div class="category-right-top-item">
+                            <button><span>Bộ lọc</span> <i class="fas fa-sort-down"></i></button>
+                        </div>
+                        <div class="category-right-top-item">
+                            <select name="" id="">
+                                <option value="">Sắp xếp</option>
+                                <option value="">Giá thấp đến cao</option>
+                                <option value="">Giá cao xuống thấp</option>
+                            </select>
+                        </div>
+
+                        <!-- Danh mục sản phẩm -->
+                        <div class="category-right-content row">
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/PC/sp1_pc_hacom_project_zero_white_intel_i5_14400f_vga_rtx_4070xx.png" alt="">
+                                <h1>PC HANCOM PROJECT ZERO WHITE (INTEL i5 14400f vga rtx 4070)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/PC/spc2PC HACOM PROJECT ZERO WHITE ( Intel i5  VGA RTX 4070 ).png" alt="">
+                                <h1>PC HACOM PROJECT ZERO WHITE ( Intel i5  VGA RTX 4070 )</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/PC/sp3_Super halogen (98000 AMD- 40990).png" alt="">
+                                <h1>Super halogen (98000 AMD- 40990)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/PC/spc4 Halogen super Black (4080GTX-AMD 5900000).png" alt="">
+                                <h1>Halogen super Black (4080GTX-AMD 5900000)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/PC/spc5HACOM x THERMALTAKE APOLLO i11-Black Myth Wukong.png" alt="">
+                                <h1>HACOM x THERMALTAKE APOLLO i11-Black Myth Wukong</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/PC/spc6PC HACOM 012 (Intel i5 12400F-VGA RX 6600).png" alt="">
+                                <h1>PC HACOM 012 (Intel i5 12400F-VGA RX 6600)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/PC/spc7PC HACOM 007 (Intel i5 12400F- VGA RTX 3050 ) POWERED BY MSI.png" alt="">
+                                <h1>PC HACOM 007 (Intel i5 12400F- VGA RTX 3050)</h1>
+                                <p>16.790.000 đồng</p>                                
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/PC/spc8PC HACOM 007 (Intel i5 12700F- VGA RTX 4050 ) POWERED.png" alt="">
+                                <h1>PC HACOM 007 (Intel i5 12700F- VGA RTX 4050)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/PC/spc9HACOM SNIPER S26 Pink (i5 13400F-GTX 1660 Super).png" alt="">
+                                <h1>HACOM SNIPER S26 Pink (i5 13400F-GTX 1660 Super)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="category-right-top-item" id="SS">
+                            <p>MÀN HÌNH SAMSUNG</p>
+                        </div>                      
+
+                        <!-- Danh mục sản phẩm -->
+                        <div class="category-right-content row">
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Samsung/ss1Màn hình Samsung ViewFinity S8 LS32B800PXEXXV (32.png" alt="">
+                                <h1>Màn hình Samsung ViewFinity S8 LS32B800PXEXXV</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Samsung/ss2Màn hình Samsung Thông Minh M7 M70D LS32DM700UEXXV.png" alt="">
+                                <h1>Màn hình Samsung Thông Minh M7 M70D LS32DM700UEXXV</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Samsung/ss3Màn hình Samsung LS22C310EAEXXV (22.png" alt="">
+                                <h1>Màn hình Samsung LS22C310EAEXXV</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Samsung/ss4Màn hình Samsung Odyssey G8 LS34DG850SEXXV (34.png" alt="">
+                                <h1>Màn hình Samsung Odyssey G8 LS34DG850SEXXV</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Samsung/ss5Màn hình Samsung Odyssey G5 G50D LS32DG502EEXXV.png" alt="">
+                                <h1>Màn hình Samsung Odyssey G5 G50D LS32DG502EEXXV</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Samsung/ss6Màn hình Samsung Odyssey OLED LS49CG954SEXXV.png" alt="">
+                                <h1>Màn hình Samsung Odyssey OLED LS49CG954SEXXV</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Samsung/ss7Màn hình Samsung LS24C330GAEXXV (23.8.png" alt="">
+                                <h1>Màn hình Samsung LS24C330GAEXXV</h1>
+                                <p>16.790.000 đồng</p>                                
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Samsung/ss8Màn hình Samsung Odyssey G5 G55C LS32CG552EEXXV (32.png" alt="">
+                                <h1>Màn hình Samsung Odyssey G5 G55C LS32CG552EEXXV</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Samsung/ss9Màn Hình Samsung LS34C500GAEXXV (34 inch.png" alt="">
+                                <h1>Màn Hình Samsung LS34C500GAEXXV</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                        </div>
+
+                        <div class="category-right-top-item" id="LG">
+                            <p>MÀN HÌNH LG</p>
+                        </div>                      
+
+                        <!-- Danh mục sản phẩm -->
+                        <div class="category-right-content row">
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/LG/lg1Màn hình LG 24MR400-B (23.8.png" alt="">
+                                <h1>Màn hình LG 24MR400-B</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/LG/lg2Màn hình LG UltraGear 24GS65F-B (23.8.png" alt="">
+                                <h1>Màn hình LG UltraGear 24GS65F-B</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/LG/lg3Màn Hình LG UltraWide 34WR55QK-B (34.png" alt="">
+                                <h1>Màn Hình LG UltraWide 34WR55QK-B</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/LG/lg4Màn hình Gaming LG 27GR93U-B (27.png" alt="">
+                                <h1>Màn hình Gaming LG 27GR93U-B</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/LG/lg5Màn hình LG 24QP500-B (23.8 inch.png" alt="">
+                                <h1>Màn hình LG 24QP500-B (23.8 inch)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/LG/lg6Màn hình LG UltraGear 27GS85Q-B (27.png" alt="">
+                                <h1>Màn hình LG UltraGear 27GS85Q-B (27 inch)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/LG/lg7Màn hình LG UltraGear 27GS60F-B (27.png" alt="">
+                                <h1>Màn hình LG UltraGear 27GS60F-B (27 inch)</h1>
+                                <p>16.790.000 đồng</p>                                
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/LG/lg8Màn hình LG 27UP850N-W.png" alt="">
+                                <h1>Màn hình LG 27UP850N-W</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/LG/lg9Màn hình LG 34GP63A-B (34.png" alt="">
+                                <h1>Màn hình LG 34GP63A-B (34 inch)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                        </div>
+
+
+                        <div class="category-right-top-item" id="AS">
+                            <p>MÀN HÌNH ASUS</p>
+                        </div>                      
+
+                        <!-- Danh mục sản phẩm -->
+                        <div class="category-right-content row">
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Asus/mh1Màn hình ASUS ROG Strix XG27WCS (27 inch).png" alt="">
+                                <h1>Màn hình ASUS ROG Strix XG27WCS (27 inch)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Asus/mh2Màn hình ASUS  Xperis Strix XG27WCS (27 inch).png" alt="">
+                                <h1>Màn hình ASUS  Xperis Strix XG27WCS (27 inch)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Asus/mh3Màn hình Asus ProArt PA248QV.png" alt="">
+                                <h1>Màn hình Asus ProArt PA248QV</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Asus/mh4Màn hình ASUS VY249HGR (23.8).png" alt="">
+                                <h1>Màn hình ASUS VY249HGR (23.8 inch)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Asus/mh5Màn hình ASUS ROG Strix PG32UCDP (31.5).png" alt="">
+                                <h1>Màn hình ASUS ROG Strix PG32UCDP (31.5 inch)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+    
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Asus/mh6Màn hình ASUS ROG Strix XG279Q (27).png" alt="">
+                                <h1>Màn hình ASUS ROG Strix XG279Q (27 inch)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Asus/mh7Màn hình ASUS ROG Strix XG27WCS (27 inch).png" alt="">
+                                <h1>Màn hình ASUS ROG Strix XG27WCS (27 inch)</h1>
+                                <p>16.790.000 đồng</p>                                
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Asus/mh8Màn hình ASUS ROG  XKEAN Strix XG279Q (34).png" alt="">
+                                <h1>Màn hình ASUS ROG  XKEAN Strix XG279Q (34 inch)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+
+                            <div class="category-right-content-item">
+                                <img src="images/imagePC/Asus/mh9Màn hình ASUS ProArt PA279CRV (27.png" alt="">
+                                <h1>Màn hình ASUS ProArt PA279CRV (27 inch)</h1>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                        </div>
+
+                    </div>                   
+
+                </div>
+            </div>
+        </section>
+
+        <section class="app-container">
+            <p>Tải ứng dụng DCShop tại</p>
+            <div class="app-google">
+                <a href="https://www.apple.com/vn/app-store/"><img src="images/appstore.png"></a>
+                <a href="https://play.google.com/store"><img src="images/chplay.png"></a>
+            </div>
+            <p>Nhận tin nhắn của DCShop tại</p>
+            <input type="text" placeholder="Nhập email của bạn tại đây...">
+        </section>
+
+        <footer>
+            <div class="footer-top">
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                </li>
+            </div>
+    
+            <div class="footer-center" id="tintuc">
+                <p>Cửa hàng DCShop với số đăng ký kinh doanh: 0120345678 <br>
+                    Địa chỉ đăng ký: 32 Lê Lợi, P. Phú Hội, Thành phố Huế - 0123 456 789.<br>
+                    Đặt hàng online: <b>0123 456 789</b>.
+                </p>
+            </div>
+
+            <div class="footer-bottom">
+                ©DCShop All rights reserved
+            </div>
+        </footer>
+
+    </body>
+
+    <script src="javascrip.js"></script>
+</html>

@@ -1,0 +1,709 @@
+/* Các giá trị mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Biến CSS */
+:root {  
+  --hover-color: #007BFF;
+  --border-color: #ccc;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --yellow:#f9d806;
+  --light-yellow:#ffee80;
+  --black:#130f40;
+  --light-color:#666;
+  --border:.1rem solid rgba(0,0,0,.1);
+  --box-shadow:0.5rem 1rem rgba(0,0,0,.1);
+  --primary-color: #007BFF; /* Xanh dương */
+  --secondary-color: #FFFFFF; /* Trắng */
+  --accent-color: #FFC107; /* Vàng cam */
+  --text-color: #333333; /* Màu chữ */
+  --background-color: #F4F4F4; /* Nền phụ */
+}
+/* Nền */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+p {
+  font-size: 14px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+a:hover {
+  color: var(--hover-color) ; /* Đổi màu khi di chuột đến */
+}
+/*---------------------------------------Phần header------------------------------------------------------ */
+header {
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;  
+  padding: 15px 30px;
+  height: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid #ddd;  
+  position: fixed;
+  z-index: 1;  
+  top: 0;
+  left: 0;
+}
+header:hover {
+  background-color: #f0f0f0;
+}
+
+/*-------------------------------------- Phần logo------------------------------------------------------ */
+.logo {
+  flex: 1;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--black);
+  text-transform: uppercase; /* Chuyển chữ thành in hoa */
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  height: 50px; /* Hoặc kích thước phù hợp */
+  width: auto;
+  display: block;
+}
+
+.logo::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--yellow), var(--light-yellow));
+  z-index: -1;
+  border-radius: 5px;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+  transform: scaleX(0); /* Ban đầu ẩn */
+  transform-origin: left; /* Hiệu ứng bắt đầu từ trái */
+}
+
+.logo:hover::before {
+  opacity: 1;
+  transform: scaleX(1); /* Hiển thị toàn bộ */
+}
+
+.logo:hover {
+  color: var(--hover-color); /* Đổi màu chữ khi di chuột */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Tạo bóng chữ */
+}
+/*--------------------Phần hamburger( đang cần sửa) ---------------------------*/
+.hamburger {  
+  display: none; /* Ban đầu ẩn */
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--text-color);
+  z-index: 2; /* Nằm trên các thành phần khác */
+}
+.hamburger:hover {
+    color: var(--hover-color);
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+.hamburger i {
+  transition: color 0.3s;
+}
+
+.hamburger i:hover {
+  color: var(--hover-color);
+}
+
+/*---------------------------------------- Phần menu--------------------------------------------------- */
+.menu-container {
+  flex: 9;
+  display: flex;  
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 25px;
+  flex: 7;
+  justify-content: center;
+  align-items: center;
+}
+.menu > li {
+  padding: 0 12px;
+  position: relative;
+}
+.menu > li > a {  
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  line-height: 20px;
+  padding: 5px 10px;
+  position: relative;
+  transition: color 0.3s;
+}
+.menu > li > a:hover {
+  color: var(--hover-color); /* Đổi màu chữ khi di chuột */
+  transform: translateY(-2px); /* Di chuyển nhẹ lên */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.menu > li > a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--yellow), var(--light-yellow));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0; /* Ban đầu ẩn đi */
+}
+.menu > li > a:hover::before {
+  transform: scaleX(1); /* Hiển thị gạch chân đầy đủ */
+  opacity: 1; /* Hiện pseudo-element */
+  z-index: 10; /* Đẩy xuống dưới chữ */
+}
+/* Hiển thị sub-menu khi di chuột */
+.menu > li:hover .sub-menu {
+  display: block;
+}
+/*-------------------- Sub-menu chính-------------- */
+.sub-menu {
+  display: none; /*Ẩn menu con */
+  position: absolute;
+  top: 100%; /* Đặt menu con ngay dưới menu chính */
+  left: 0;
+  background-color: var(--background-color); 
+  width: 180px;
+  border: 1px solid var(--border-color);
+  padding: 10px 0;
+  box-shadow: 0 2px 5px var(--shadow-color);
+  z-index: 20; /* Đảm bảo luôn nằm trên các phần tử khác */  
+}
+.sub-menu > li {
+  position: relative;
+  font-size: 16px;
+}
+.sub-menu > li > a {
+  font-weight: bolder;
+  font-size: 14px;
+  padding: 8px 15px;
+  display: block;
+  color: var(--text-color);
+  transition: background-color 0.3s;
+}
+.sub-menu > li > a:hover {
+  background-color: #e9ecef;
+  color: var(--hover-color);
+}
+
+/* Phần khác: thanh tìm kiếm, icon */
+.other {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;  
+  flex: 1;  
+}
+.other > li {
+  display: flex;
+  padding: 0 10px;
+  height: 26px;  
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.other > li::after {
+  content:"";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: #cccccc;
+  position: absolute;
+  right: 0;
+  top : 0;
+  transform: translateY();
+}
+.other > li:last-child::after {
+  display: none;
+ }
+.other .fa-search {
+  color: var(--text-color);  
+  cursor: pointer;
+}
+.other > li:first-child {
+  position: relative;
+}
+.other > li:first-child input {
+  width: 150px;  
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s; 
+}
+.other > li:first-child input:focus {  
+  border-bottom: 1px solid var(--hover-color);
+}
+.other > li:first-child i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.other > li:first-child i:hover {
+  color: var(--hover-color);
+}
+/* Căn chỉnh các icon bên phải */
+.other a {
+  font-size: 18px;
+  color: var(--text-color);
+  padding: 5px;
+  transition: color 0.3s;
+}
+.other a:hover {
+  color: var(--hover-color);
+}
+/*--------------------------------------Phần slider----------------------------------------*/
+.Slider {  
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+  overflow: hidden;
+}
+.aspect-ratio-169 {
+  display: block;
+  position: relative;
+  padding-top: 56.25%;
+  transition: left 0.5s ease-in-out;
+}
+.aspect-ratio-169 img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.dot-container {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.dot {
+  height: 16px;
+  width: 16px;
+  background-color: var(--border-color);
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.dot.active {
+  background-color: var(--text-color);
+}
+.dot:hover {
+  background-color: var(--hover-color);
+}
+/*--------------------------------------Phần kích thước----------------------------------------*/
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  .menu-container {
+    display: none; /* Ẩn menu chính */
+    flex-direction: column; /* Sắp xếp menu theo cột */
+    position: absolute;
+    top: 50px; /* Bên dưới header */
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border-color);
+    z-index: 100;    
+  }
+  .menu-container.active {
+    display: flex; /* Hiển thị khi hamburger được nhấn */
+  }
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+  }  
+  .menu > li > a::before {
+    display: none;
+  }
+  .menu > li {
+    width: 100%;
+    text-align: left;
+  }  
+  .menu > li:hover .sub-menu {
+    display: block; /* Hiển thị sub-menu khi hover */
+  }  
+  .other {    
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  .other li {
+    padding: 0;
+    border: none; /* Loại bỏ đường viền */
+  }
+  .other li:nth-child(2),
+  .other li:nth-child(3) {
+    display: none; /* Ẩn biểu tượng giỏ hàng và người dùng */
+  }
+  .category-left {
+    display: none;
+  } 
+  .category-right-content-item {
+    width: calc(50% - 12px); /* Một sản phẩm mỗi hàng trên màn hình nhỏ */
+  }
+  .hamburger {
+    display: block; /* Hiển thị trên màn hình nhỏ */
+    position: absolute;
+    left: 10px; /* Căn chỉnh bên trái */
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .hamburger.active  {
+    display: flex; /* Hiển thị menu khi hamburger được mở */
+  }  
+}
+/*-----------------------------Phần app cài đặt--------------------------------------------- */
+.app-container {
+  text-align: center;
+  align-items: center;
+  padding: 150px 0 50px 0;
+
+}
+.app-google {
+  margin: 50px;
+}
+.app-google img {
+  height: 50px;
+  cursor: pointer;
+}
+.app-container > p {
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: var(--text-color);
+  font-weight: bold;
+}
+.app-container > input {
+  margin-top: 50px;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  width: 200px;
+  text-align: center;
+  outline: none;
+}
+/*-----------------------------Phần footer---------------------------------------------*/
+footer {
+  text-align: center;
+  background-color: var(--hover-color);
+  color: var(--secondary-color);
+  padding: 20px;
+}
+.footer-top {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 50px;
+}
+.footer-top > li {
+  padding: 0 12px;
+  position: relative;
+}
+.footer-top a{
+  color: var(--secondary-color);
+}
+.footer-top > li::after {    
+  content:"";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: #cccccc;
+  position: absolute;
+  right: 0;
+  top : 0;
+  transform: translateY();
+ }
+ .footer-top > li:last-child::after {
+  display: none;
+ }
+ .footer-top > li:last-child > a {
+  margin-right: 12px; 
+ } 
+ .footer-center {
+  text-align: center;
+ }
+ .footer-bottom {
+  margin: 20px 0 ;
+  text-align: center;
+ }
+
+ /*--------------Danh mục sản phẩm(Category)*/
+ .category {
+  padding: 100px 10px 10px;
+ }
+ /* Phần đầu*/
+ .category-top {
+  margin-bottom: 50px;
+ }
+ .category-top p {
+  margin: 0 12px;
+  font-size: 14px;
+  font-weight: bold;
+ }
+ /* Phần bên trái*/
+ .category-left {
+  width: 15%;
+  justify-content: center;
+ 
+ }
+ .category-left > ul > li {
+  padding: 10px;
+ }
+ .category-left-li {
+  bottom: 10px;
+ }
+ .category-left-li > a {
+  font-weight: bold;
+ }
+ .category-left ul ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.category-left-li:hover > ul {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Phần bên phải*/
+ .category-right {
+  width: 85%;
+ }
+ .category-right-top-item p {
+  font-size: 16px;
+  font-weight: bold;
+ }
+ .category-right-top-item:first-child {
+  display: flex;
+  align-items: center;  
+  font-size: 16px;
+  font-weight: bold;
+ }
+ .category-right-top-item {
+  flex: 1;
+  padding: 0 12px;
+ }
+ .category-right-top-item button {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  border: 1px solid #dddddd;
+  cursor: pointer;
+ }
+ .category-right-top-item select {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  border: 1px solid #dddddd;
+  cursor: pointer;
+ }
+ button, select {
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+button:hover, select:hover {
+  background-color: #f0f0f0;
+}
+ /*Phần nội dung của bên phải*/
+.category-right-content {  
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.category-right-content-item {
+  width: calc(33% - 12px);
+  text-align: center;
+  padding: 12px 0;
+  margin-bottom: 40px;
+}
+.category-right-content-item h1 {
+  font-size: 13px;
+  margin-top: 6px;
+  color: var(--text-color);
+}
+.category-right-content-item p {
+  font-size: 14px;
+}
+.category-right-content-item img {
+  width: 100%;
+  height: 100%;
+}
+.category-right-content-item img:hover {
+ transform: scale(1.1);
+}
+/* Giới thiệu*/
+.about-banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 80px; /* Dịch chuyển banner xuống */
+}
+
+.about-banner img {
+  width: 100%; /* Chiều rộng chiếm toàn bộ khung chứa */
+  max-width: 1200px; /* Giới hạn tối đa chiều rộng */
+  height: auto; /* Tự điều chỉnh chiều cao theo tỉ lệ */
+  object-fit: contain; /* Hiển thị toàn bộ ảnh mà không bị cắt */
+  display: block; /* Tránh khoảng trống dưới ảnh */
+  margin: 0 auto; /* Căn giữa ảnh */
+}
+.about-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+.about-text p {
+  font-size: 1.2em;
+}
+
+.vision-container {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+.vision-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.vision-item {
+  width: 30%;
+  text-align: center;
+}
+.vision-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+.vision-item h3 {
+  margin: 15px 0;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  text-align: center;
+  padding: 50px 0;
+}
+.choose-us-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.choose-item {
+  width: 30%;
+  text-align: center;  
+}
+.choose-item i {
+  font-size: 2em;
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+ /* Call to Action */
+ .call-to-action {
+  background-color: #ff6f61;
+  text-align: center;
+  color: white;
+  padding: 30px 0;
+}
+.btn-explore {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #ff6f61;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+/* ----------------------------------- */
+.about-banner img {
+  width: 100%; /* Chiều rộng đầy đủ theo khung chứa */
+  max-height: 800px; /* Giới hạn chiều cao */
+  object-fit: cover; /* Ảnh sẽ vừa khung và không bị méo */
+  display: block; /* Loại bỏ khoảng trống dưới ảnh */
+}
+.about-text {
+  position: absolute; /* Đặt chữ đè lên ảnh */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(120, 33, 33);
+  font-size: 1.5rem;
+}
+.about-banner {
+  position: relative; /* Tạo khung cho nội dung chữ đè lên ảnh */
+  text-align: center;
+}
+
+.vision-item img {
+  width: 120px; /* Giới hạn chiều rộng ảnh */
+  height: 120px;
+  object-fit: contain; /* Giữ nguyên tỷ lệ ảnh */
+  margin: 10px auto; /* Căn giữa ảnh */
+}
+.vision-item {
+  text-align: center; /* Căn giữa nội dung */
+  padding: 10px;
+}
+
+.footer-top img {
+  width: 40px; /* Giảm kích thước ảnh */
+
+  margin-right: 8px;
+}
+.footer-top li {
+  display: inline-block; /* Hiển thị theo hàng ngang */
+  margin: 5px;
+}
