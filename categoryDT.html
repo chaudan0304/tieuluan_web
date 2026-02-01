@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="description" content="DCShop - Cửa hàng thương mại điện tử cung cấp các sản phẩm điện thoại, laptop, PC chính hãng, giá tốt.">
         <title>Website- DCShop</title>
-        <link rel="website icon" type="png" href="images/dcshoplogo.png">
+        <link rel="icon" type="image/png" href="images/dcshoplogo.png">
         <!--Liên kết css-->
         <link rel="stylesheet" href="style.css">
         <!--Hiệu ứng-->
@@ -23,39 +23,25 @@
 
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/dcshoplogo.png">
+                    <img src="images/dcshoplogo.png" alt="DCShop Logo">
                 </a>
-            </div>                                           
+            </div>                                          
 
             <div class="menu-container">
-                <div class="menu">
-                    <li><a href="index.html">TRANG CHỦ</a></li>                                           
-                    
-                    <li><a href="categoryDT.html">ĐIỆN THOẠI</a>
-                        <ul class="sub-menu">
-                            <li><a href="#SS">Samsung</a></li>
-                            <li><a href="#OP">Oppo</a></li>
-                            <li><a href="#AP">Iphone</a></li>        
-                        </ul>
-                    </li>
-
-                    <li><a href="categoryLT.html">LAPTOP</a>
-                        
-                    </li>
-
-                    <li><a href="categoryPC.html">PC</a>
-                        
-                    </li>
-
-                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
-                    <li><a href="#tintuc">TIN TỨC</a></li>
-                </div>
+                <nav class="menu" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="categoryDT.html">ĐIỆN THOẠI</a></li>
+                        <li><a href="categoryLT.html">LAPTOP</a></li>
+                        <li><a href="categoryPC.html">PC</a></li>
+                        <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                        <li><a href="#tintuc">TIN TỨC</a></li>
+                    </ul>
+                </nav>
                 
                 <div class="other">
                     <li>
-                        <input type="text" placeholder="Tìm kiếm...">
-                        <i class="fas fa-search"></i>
-                    </li>
+                        <input type="text" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
 
                     <li>
                         <a href="#"><i class="fa fa-paw"></i></a>

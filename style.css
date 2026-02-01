@@ -30,6 +30,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: Arial, sans-serif;
+  padding-top: 70px; /* Space for fixed header */
 }
 .row {
   display: flex;
