@@ -3,33 +3,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 html {
   scroll-behavior: smooth;
 }
 /* Biến CSS */
 :root {  
-  --hover-color: #007BFF;
-  --border-color: #ccc;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --yellow:#f9d806;
-  --light-yellow:#ffee80;
-  --black:#130f40;
+  --hover-color: #FF6B35;
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --yellow:#FFC107;
+  --light-yellow:#FFD54F;
+  --black:#1A1A1A;
   --light-color:#666;
   --border:.1rem solid rgba(0,0,0,.1);
-  --box-shadow:0.5rem 1rem rgba(0,0,0,.1);
-  --primary-color: #007BFF; /* Xanh dương */
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --primary-color: #FF6B35; /* Cam cam */
   --secondary-color: #FFFFFF; /* Trắng */
-  --accent-color: #FFC107; /* Vàng cam */
-  --text-color: #333333; /* Màu chữ */
-  --background-color: #F4F4F4; /* Nền phụ */
+  --accent-color: #FFD700; /* Vàng */
+  --text-color: #2c3e50; /* Màu chữ */
+  --background-color: #FAFAFA; /* Nền phụ */
 }
 /* Nền */
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 70px; /* Space for fixed header */
 }
 .row {
@@ -54,62 +54,67 @@ header {
   display: flex;  
   align-items: center;
   justify-content: space-between;  
-  padding: 15px 30px;
-  height: 60px;
+  padding: 12px 40px;
+  height: 70px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-bottom: 1px solid #ddd;  
+  background: linear-gradient(135deg, #FFFFFF 0%, #F8F9FA 100%);
+  border-bottom: 2px solid #e0e0e0;
   position: fixed;
-  z-index: 1;  
+  z-index: 1000;
   top: 0;
   left: 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 header:hover {
-  background-color: #f0f0f0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 /*-------------------------------------- Phần logo------------------------------------------------------ */
 .logo {
   flex: 1;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 26px;
+  font-weight: 700;
   color: var(--black);
-  text-transform: uppercase; /* Chuyển chữ thành in hoa */
+  text-transform: uppercase;
   position: relative;
   z-index: 1;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  gap: 10px;
 }
 .logo img {
-  height: 50px; /* Hoặc kích thước phù hợp */
+  height: 45px;
   width: auto;
   display: block;
+  transition: transform 0.3s ease;
 }
-
+.logo:hover img {
+  transform: scale(1.05);
+}
 .logo::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, var(--yellow), var(--light-yellow));
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
   z-index: -1;
-  border-radius: 5px;
+  border-radius: 3px;
   opacity: 0;
   transition: transform 0.3s, opacity 0.3s;
-  transform: scaleX(0); /* Ban đầu ẩn */
-  transform-origin: left; /* Hiệu ứng bắt đầu từ trái */
+  transform: scaleX(0);
+  transform-origin: left;
 }
 
 .logo:hover::before {
   opacity: 1;
-  transform: scaleX(1); /* Hiển thị toàn bộ */
+  transform: scaleX(1);
 }
 
 .logo:hover {
-  color: var(--hover-color); /* Đổi màu chữ khi di chuột */
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Tạo bóng chữ */
+  color: var(--primary-color);
+  text-shadow: 0 2px 4px rgba(255, 107, 53, 0.2);
 }
 /*--------------------Phần hamburger( đang cần sửa) ---------------------------*/
 .hamburger {  
@@ -135,85 +140,103 @@ header:hover {
 /*---------------------------------------- Phần menu--------------------------------------------------- */
 .menu-container {
   flex: 9;
-  display: flex;  
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .menu {
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap: 25px;
+  gap: 30px;
   flex: 7;
   justify-content: center;
   align-items: center;
 }
-.menu > li {
-  padding: 0 12px;
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.menu ul li {
   position: relative;
 }
-.menu > li > a {  
-  font-size: 16px;
-  font-weight: bold;
+.menu a {  
+  font-size: 14px;
+  font-weight: 600;
   display: block;
-  line-height: 20px;
-  padding: 5px 10px;
+  padding: 8px 12px;
   position: relative;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.2s;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
-.menu > li > a:hover {
-  color: var(--hover-color); /* Đổi màu chữ khi di chuột */
-  transform: translateY(-2px); /* Di chuyển nhẹ lên */
-  transition: transform 0.3s ease, color 0.3s ease;
+.menu a:hover {
+  color: var(--primary-color);
+  transform: translateY(-2px);
 }
-.menu > li > a::before {
+.menu a::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, var(--yellow), var(--light-yellow));
+  height: 2px;
+  background: var(--primary-color);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s, opacity 0.3s;
-  opacity: 0; /* Ban đầu ẩn đi */
+  transition: transform 0.3s ease;
 }
-.menu > li > a:hover::before {
-  transform: scaleX(1); /* Hiển thị gạch chân đầy đủ */
-  opacity: 1; /* Hiện pseudo-element */
-  z-index: 10; /* Đẩy xuống dưới chữ */
+.menu a:hover::after {
+  transform: scaleX(1);
 }
 /* Hiển thị sub-menu khi di chuột */
-.menu > li:hover .sub-menu {
+.menu li:hover .sub-menu {
   display: block;
 }
 /*-------------------- Sub-menu chính-------------- */
 .sub-menu {
-  display: none; /*Ẩn menu con */
+  display: none;
   position: absolute;
-  top: 100%; /* Đặt menu con ngay dưới menu chính */
+  top: 100%;
   left: 0;
-  background-color: var(--background-color); 
-  width: 180px;
+  background-color: white;
+  width: 200px;
   border: 1px solid var(--border-color);
-  padding: 10px 0;
-  box-shadow: 0 2px 5px var(--shadow-color);
-  z-index: 20; /* Đảm bảo luôn nằm trên các phần tử khác */  
+  padding: 8px 0;
+  margin-top: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  z-index: 20;
+  border-radius: 4px;
+  animation: slideDown 0.3s ease;
 }
-.sub-menu > li {
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.sub-menu li {
   position: relative;
-  font-size: 16px;
 }
-.sub-menu > li > a {
-  font-weight: bolder;
-  font-size: 14px;
-  padding: 8px 15px;
+.sub-menu a {
+  font-weight: 500;
+  font-size: 13px;
+  padding: 10px 15px;
   display: block;
   color: var(--text-color);
-  transition: background-color 0.3s;
+  text-transform: none;
+  transition: all 0.2s;
 }
-.sub-menu > li > a:hover {
-  background-color: #e9ecef;
-  color: var(--hover-color);
+.sub-menu a:hover {
+  background-color: #f5f5f5;
+  color: var(--primary-color);
+  padding-left: 20px;
 }
 
 /* Phần khác: thanh tìm kiếm, icon */
@@ -221,33 +244,67 @@ header:hover {
   display: flex;
   justify-content: flex-end;
   align-items: center;  
-  flex: 1;  
+  flex: 2;
+  gap: 20px;
 }
-.other > li {
+.other > div {
   display: flex;
-  padding: 0 10px;
-  height: 26px;  
-  position: relative;
   align-items: center;
   justify-content: center;
-}
-.other > li::after {
-  content:"";
-  display: block;
-  width: 2px;
-  height: 100%;
-  background: #cccccc;
-  position: absolute;
-  right: 0;
-  top : 0;
-  transform: translateY();
-}
-.other > li:last-child::after {
-  display: none;
- }
-.other .fa-search {
-  color: var(--text-color);  
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
   cursor: pointer;
+}
+.other > div:hover {
+  background-color: rgba(255, 107, 53, 0.1);
+}
+.other input {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  width: 180px;
+  transition: all 0.3s ease;
+  background-color: #f5f5f5;
+}
+.other input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+  width: 220px;
+}
+.other input::placeholder {
+  color: #999;
+}
+.other .fa-search {
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+  margin-left: -35px;
+}
+.other .fa-search:hover {
+  color: var(--primary-color);
+}
+.other a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+}
+.other a:hover {
+  color: var(--primary-color);
+  background-color: rgba(255, 107, 53, 0.1);
+  transform: scale(1.1);
+}
 }
 .other > li:first-child {
   position: relative;
