@@ -11,7 +11,7 @@
     <meta property="og:description" content="Cửa hàng DCShop - điện thoại, laptop, PC và phụ kiện chính hãng">
     <meta property="og:image" content="images/dcshoplogo.png">
     <meta name="twitter:card" content="summary_large_image">
-    <title>Website- DCShop</title>
+    <title>DCShop - Cửa hàng công nghệ chính hãng</title>
     <link rel="icon" type="image/png" href="images/dcshoplogo.png"> <!--Liên kết css-->
     <link rel="stylesheet" href="style.css"> <!--Hiệu ứng-->
     <!--Font chữ và Icon-->
@@ -20,7 +20,8 @@
 
 <body>
     <header>
-        <button class="hamburger" aria-label="Mở menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+        <button class="hamburger" aria-label="Mở menu" aria-expanded="false"><i class="fas fa-bars"
+                aria-hidden="true"></i></button>
         <div class="logo"> <a href="index.html"> <img src="images/dcshoplogo.png" alt="DCShop Logo"> </a> </div>
         <div class="menu-container">
             <nav class="menu" aria-label="Main navigation">
@@ -36,7 +37,8 @@
             <div class="other">
                 <div class="search">
                     <input type="text" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
-                    <button class="search-btn" aria-label="Tìm kiếm"><i class="fas fa-search" aria-hidden="true"></i></button>
+                    <button class="search-btn" aria-label="Tìm kiếm"><i class="fas fa-search"
+                            aria-hidden="true"></i></button>
                 </div>
                 <a href="#" class="icon" aria-label="Yêu thích"><i class="fa fa-paw" aria-hidden="true"></i></a>
                 <a href="#" class="icon" aria-label="Tài khoản"><i class="fa fa-user" aria-hidden="true"></i></a>
@@ -59,10 +61,97 @@
             <div class="dot"></div>
         </div>
     </section>
+
+    <!-- Category Banners -->
+    <section class="category-banners">
+        <a href="categoryDT.html" class="cat-banner">
+            <div class="cat-overlay"
+                style="background: linear-gradient(135deg, rgba(255,107,53,0.85), rgba(247,147,30,0.85));">
+                <div>
+                    <h3><i class="fas fa-mobile-alt" style="margin-right:8px;"></i> Điện Thoại</h3>
+                    <p style="color:rgba(255,255,255,0.9); font-size:13px; margin-top:4px;">Samsung, iPhone, OPPO</p>
+                </div>
+            </div>
+        </a>
+        <a href="categoryLT.html" class="cat-banner">
+            <div class="cat-overlay"
+                style="background: linear-gradient(135deg, rgba(0,78,137,0.85), rgba(6,214,160,0.7));">
+                <div>
+                    <h3><i class="fas fa-laptop" style="margin-right:8px;"></i> Laptop</h3>
+                    <p style="color:rgba(255,255,255,0.9); font-size:13px; margin-top:4px;">HP, Dell, MSI</p>
+                </div>
+            </div>
+        </a>
+        <a href="categoryPC.html" class="cat-banner">
+            <div class="cat-overlay"
+                style="background: linear-gradient(135deg, rgba(26,26,46,0.85), rgba(0,78,137,0.85));">
+                <div>
+                    <h3><i class="fas fa-desktop" style="margin-right:8px;"></i> PC & Màn Hình</h3>
+                    <p style="color:rgba(255,255,255,0.9); font-size:13px; margin-top:4px;">PC Gaming, Màn hình Samsung,
+                        LG, ASUS</p>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-section">
+        <div class="section-title">
+            <h2>🔥 Sản Phẩm Nổi Bật</h2>
+            <p>Những sản phẩm được yêu thích nhất tại DCShop</p>
+        </div>
+        <div class="featured-grid">
+            <a href="categoryDT.html#AP" class="featured-card">
+                <span class="badge">Hot</span>
+                <div class="card-img">
+                    <img src="images/imageDT/ip1.png" alt="iPhone 16 Pro Max" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3>iPhone 16 Pro Max 256GB</h3>
+                    <p class="price">34.090.000đ</p>
+                </div>
+            </a>
+            <a href="categoryDT.html#SS" class="featured-card">
+                <span class="badge">New</span>
+                <div class="card-img">
+                    <img src="images/imageDT/samsung1.png" alt="Samsung Galaxy S24" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3>Samsung Galaxy S24 5G 8GB/256GB</h3>
+                    <p class="price">16.790.000đ</p>
+                </div>
+            </a>
+            <a href="categoryDT.html#OP" class="featured-card">
+                <div class="card-img">
+                    <img src="images/imageDT/oppo1.png" alt="OPPO Find X8" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3>OPPO Find X8 5G 16GB/512GB</h3>
+                    <p class="price">16.790.000đ</p>
+                </div>
+            </a>
+            <a href="categoryLT.html#DELL" class="featured-card">
+                <span class="badge">Sale</span>
+                <div class="card-img">
+                    <img src="images/imageLT/dell1.png" alt="Dell Inspiron 15" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3>Dell Inspiron 15 3520 i5 1235U</h3>
+                    <p class="price">16.790.000đ</p>
+                </div>
+            </a>
+        </div>
+        <div class="view-all-btn">
+            <a href="categoryDT.html" class="btn btn-secondary">Xem Tất Cả Sản Phẩm <i class="fas fa-arrow-right"
+                    style="margin-left:6px;"></i></a>
+        </div>
+    </section>
+
     <section class="app-container">
         <p>Tải ứng dụng DCShop tại</p>
-        <div class="app-google"> <a href="https://www.apple.com/vn/app-store/"><img src="images/appstore.png"></a> <a
-                href="https://play.google.com/store"><img src="images/chplay.png"></a> </div>
+        <div class="app-google"> <a href="https://www.apple.com/vn/app-store/"><img src="images/appstore.png"
+                    alt="Tải trên App Store"></a> <a href="https://play.google.com/store"><img src="images/chplay.png"
+                    alt="Tải trên Google Play"></a> </div>
         <p>Nhận tin nhắn của DCShop tại</p> <input type="email" placeholder="Nhập email của bạn tại đây..."
             aria-label="Đăng ký email">
     </section>
@@ -116,10 +205,10 @@
             <p>Điện thoại: 0123 456 789 | Email: support@dcshop.vn</p>
         </div>
         <div class="footer-bottom">
-            <p>© 2024 DCShop. Tất cả quyền được bảo lưu.</p>
+            <p>© 2025 DCShop. Tất cả quyền được bảo lưu.</p>
         </div>
     </footer>
+    <script src="main.js" defer></script>
 </body>
-<script src="main.js" defer></script>
 
 </html>
