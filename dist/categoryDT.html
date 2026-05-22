@@ -1,28 +1,33 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="DCShop - Cửa hàng thương mại điện tử cung cấp các sản phẩm điện thoại, laptop, PC chính hãng, giá tốt.">
-    <meta property="og:title" content="DCShop - Cửa hàng công nghệ">
-    <meta property="og:description" content="Cửa hàng DCShop - điện thoại, laptop, PC và phụ kiện chính hãng">
+    <meta name="description" content="DCShop - Điện thoại chính hãng Samsung, iPhone, OPPO giá tốt nhất.">
+    <meta property="og:title" content="Điện thoại chính hãng - DCShop">
+    <meta property="og:description" content="Cửa hàng DCShop - điện thoại Samsung, iPhone, OPPO chính hãng">
     <meta property="og:image" content="images/dcshoplogo.png">
     <meta name="twitter:card" content="summary_large_image">
-    <title>Website- DCShop</title>
-    <link rel="icon" type="image/png" href="images/dcshoplogo.png"> <!--Liên kết css-->
-    <link rel="stylesheet" href="style.css"> <!--Hiệu ứng-->
-    <!--Font chữ và Icon-->
+    <title>Điện thoại chính hãng - DCShop</title>
+    <link rel="icon" type="image/png" href="images/dcshoplogo.png">
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <!-- Liên kết CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font chữ và Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
+    <a href="#main-content" class="skip-to-content">Bỏ qua đến nội dung chính</a>
     <header>
-    <div class="hamburger">
-        <i class="fas fa-bars"></i>
-    </div>
+    <button type="button" class="hamburger" aria-label="Mở menu" aria-expanded="false">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
 
     <div class="logo">
         <a href="index.html">
@@ -43,190 +48,261 @@
         </nav>
 
         <div class="other">
-            <li>
+            <div class="search">
                 <input type="text" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
-                <i class="fas fa-search"></i>
-            </li>
-
-            <li>
-                <a href="#"><i class="fa fa-paw"></i></a>
-            </li>
-
-            <li>
-                <a href="#"><i class="fa fa-user"></i></a>
-            </li>
+                <button type="button" class="search-btn" aria-label="Tìm kiếm"><i class="fas fa-search"
+                        aria-hidden="true"></i></button>
+            </div>
+            <button type="button" class="icon theme-toggle" id="theme-toggle" aria-label="Chuyển chế độ tối"><i class="fas fa-moon" aria-hidden="true"></i></button>
+            <button type="button" class="icon cart-icon-btn" id="cart-toggle" aria-label="Giỏ hàng">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                <span class="cart-badge">0</span>
+            </button>
+            <a href="#" class="icon" aria-label="Tài khoản"><i class="fa fa-user" aria-hidden="true"></i></a>
         </div>
     </div>
-</header> <!--Phần danh mục các sản phẩm(category)-->
-    <section class="category">
-        <div class="container">
-            <div class="category-top row">
-                <p>Trang chủ</p> <span>&#10230; </span>
-                <p>Sản phẩm</p> <span>&#10230; </span>
-                <p>Điện thoại</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="category-left row">
-                    <ul>
-                        <li class="category-left-li"><a href="categoryDT.html">Điện thoại</a>
-                            <ul>
-                                <li><a href="#SS">Samsung</a></li>
-                                <li><a href="#OP">Oppo</a></li>
-                                <li><a href="#AP">Iphone</a></li>
-                            </ul>
-                        </li>
-                        <li class="category-left-li"><a href="categoryLT.html">Laptop</a></li>
-                        <li class="category-left-li"><a href="categoryPC.html">PC</a></li>
-                    </ul>
-                </div>
-                <div class="category-right row">
-                    <div class="category-right-top-item" id="SS">
-                        <p>SAMSUNG</p>
-                    </div>
-                    <div class="category-right-top-item"> <button><span>Bộ lọc</span> <i
-                                class="fas fa-sort-down"></i></button> </div>
-                    <div class="category-right-top-item"> <select name="" id="">
-                            <option value="">Sắp xếp</option>
-                            <option value="">Giá thấp đến cao</option>
-                            <option value="">Giá cao xuống thấp</option>
-                        </select> </div> <!-- Danh mục sản phẩm -->
-                    <div class="category-right-content row">
-                        <div class="category-right-content-item"> <img
-                                src="images/imageDT/samsung-galaxy-a06-4gb-64gb-4-.png" alt="" loading="lazy">
-                            <h1>samsung-galaxy-s24-ultra-5g</h1>
-                            <p>16.790.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item"> <img
-                                src="images/imageDT/samsung-galaxy-a16-8gb-128gb-2-.png" alt="" loading="lazy">
-                            <h1>Samsung Galaxy S24 Ultra 5G</h1>
-                            <p>16.790.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item"> <img src="images/imageDT/samsung-galaxy-a16-5g-3-.png"
-                                alt="" loading="lazy">
-                            <h1>Samsung Galaxy A16 5G</h1>
-                            <p>16.790.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item"> <img src="images/imageDT/samsung2.png" alt=""
-                                loading="lazy">
-                            <h1>Samsung Galaxy Z Flip6 5G</h1>
-                            <p>16.790.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item"> <img src="images/imageDT/samsung1.png" alt=""
-                                loading="lazy">
-                            <h1>Samsung Galaxy S24 5G 8GB/256GB</h1>
-                            <p>16.790.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item"> <img
-                                src="images/imageDT/samsung-galaxy-a16-8gb-128gb-2-.png" alt="" loading="lazy">
-                            <h1>Samsung Galaxy M55 5G 8GB/256GB</h1>
-                            <p>16.790.000 đồng</p>
-                        </div>
-                    </div> <!-- Danh mục sản phẩm  OPPO-->
-                    <div class="category-right-top-item" id="OP">
-                        <p>OPPO</p>
-                    </div>
-                    <div class="category-right-content row">
-                        <div class="category-right-content-item"> <img src="images/imageDT/oppo1.png" alt=""
-                                loading="lazy">
-                            <h1>OPPO Find X8 5G 16GB/512GB</h1>
-                            <p>16.790.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item"> <img src="images/imageDT/oppo2.png" alt=""
-                                loading="lazy">
-                            <h1>OPPO Find X8 Pro 5G 16GB/512GB</h1>
-                            <p>16.790.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item">
-                            <div class="product-media"><img src="images/imageDT/oppo3.png" alt="" loading="lazy"></div>
-                            <h1>OPPO A58 8GB/128GB</h1>
-                            <p>16.790.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item">
-                            <div class="product-media"><img src="images/imageDT/oppo4.png" alt="" loading="lazy"></div>
-                            <h1>OPPO Find N3 5G 16GB/512GB</h1>
-                            <p>16.790.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item">
-                            <div class="product-media"><img src="images/imageDT/oppo1.png" alt="" loading="lazy"></div>
-                            <h1>OPPO Find X8 Pro 5G 16GB/256GB</h1>
-                            <p>16.790.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item"> <img src="images/imageDT/oppo2.png" alt=""
-                                loading="lazy">
-                            <h1>OPPO Find X8 Pro 5G 16GB/512GB</h1>
-                            <p>16.790.000 đồng</p>
-                        </div>
-                    </div> <!-- Danh mục sản phẩm  IPhone-->
-                    <div class="category-right-top-item" id="AP">
-                        <p>IPHONE</p>
-                    </div>
-                    <div class="category-right-content row">
-                        <div class="category-right-content-item">
-                            <div class="product-media"><img src="images/imageDT/ip1.png" alt="" loading="lazy"></div>
-                            <h1>iPhone 16 Pro Max</h1>
-                            <p>34.090.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item">
-                            <div class="product-media"><img src="images/imageDT/ip2.png" alt="" loading="lazy"></div>
-                            <h1>iPhone 16 Plus</h1>
-                            <p>25.490.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item">
-                            <div class="product-media"><img src="images/imageDT/ip3.png" alt="" loading="lazy"></div>
-                            <h1>iPhone 16 Pro</h1>
-                            <p>28.590.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item">
-                            <div class="product-media"><img src="images/imageDT/ip4.png" alt="" loading="lazy"></div>
-                            <h1>iPhone 15 Pro Max</h1>
-                            <p>29.590.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item">
-                            <div class="product-media"><img src="images/imageDT/ip5.png" alt="" loading="lazy"></div>
-                            <h1>iPhone 14 Plus</h1>
-                            <p>19.990.000 đồng</p>
-                        </div>
-                        <div class="category-right-content-item">
-                            <div class="product-media"><img src="images/imageDT/ip6.png" alt="" loading="lazy"></div>
-                            <h1>iPhone 15 Pro</h1>
-                            <p>27.990.000 đồng</p>
-                        </div>
-                    </div>
+</header>
+    <main id="main-content">
+        <section class="category">
+            <div class="container">
+                <div class="category-top row">
+                    <a href="index.html" class="breadcrumb-link"><i class="fas fa-home" aria-hidden="true"></i> Trang chủ</a>
+                    <span class="breadcrumb-separator"><i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+                    <span class="breadcrumb-item">Sản phẩm</span>
+                    <span class="breadcrumb-separator"><i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+                    <span class="breadcrumb-item active">Điện thoại</span>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="container">
+                <div class="row">
+                    <div class="category-left row">
+                        <div class="category-left-header">
+                            <i class="fas fa-stream" aria-hidden="true"></i>
+                            <span>DANH MỤC</span>
+                        </div>
+                        <ul>
+                            <li class="category-left-li active"><a href="categoryDT.html"><i class="fas fa-mobile-alt" aria-hidden="true"></i> Điện thoại</a>
+                                <ul>
+                                    <li><a href="#SS">Samsung</a></li>
+                                    <li><a href="#OP">Oppo</a></li>
+                                    <li><a href="#AP">Iphone</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-left-li"><a href="categoryLT.html"><i class="fas fa-laptop" aria-hidden="true"></i> Laptop</a></li>
+                            <li class="category-left-li"><a href="categoryPC.html"><i class="fas fa-desktop" aria-hidden="true"></i> PC &amp; Màn hình</a></li>
+                        </ul>
+                    </div>
+                    <div class="category-right row">
+                        <div class="category-right-top">
+                            <div class="category-right-top-item" id="SS">
+                                <p>SAMSUNG</p>
+                            </div>
+                            <div class="category-right-top-item"> <button type="button"><span>Bộ lọc</span> <i
+                                        class="fas fa-sort-down"></i></button> </div>
+                            <div class="category-right-top-item"> <select name="sort" id="sort-dt"
+                                    aria-label="Sắp xếp sản phẩm">
+                                    <option value="">Sắp xếp</option>
+                                    <option value="low-high">Giá thấp đến cao</option>
+                                    <option value="high-low">Giá cao xuống thấp</option>
+                                </select> </div>
+                        </div> <!-- Danh mục sản phẩm -->
+                        <div class="category-right-content row">
+                            <div class="category-right-content-item">
+                                <div class="product-media"><img
+                                    src="images/imageDT/samsung-galaxy-a06-4gb-64gb-4-.png" alt="Samsung Galaxy A06"
+                                    loading="lazy"></div>
+                                <h3>samsung-galaxy-s24-ultra-5g</h3>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <span class="product-badge badge-hot">Hot</span>
+                                <div class="product-media"><img
+                                    src="images/imageDT/samsung-galaxy-a16-8gb-128gb-2-.png"
+                                    alt="Samsung Galaxy S24 Ultra 5G" loading="lazy"></div>
+                                <h3>Samsung Galaxy S24 Ultra 5G</h3>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <span class="product-badge badge-new">New</span>
+                                <div class="product-media"><img
+                                    src="images/imageDT/samsung-galaxy-a16-5g-3-.png" alt="Samsung Galaxy A16 5G"
+                                    loading="lazy"></div>
+                                <h3>Samsung Galaxy A16 5G</h3>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <div class="product-media"><img src="images/imageDT/samsung2.png"
+                                    alt="Samsung Galaxy Z Flip6 5G" loading="lazy"></div>
+                                <h3>Samsung Galaxy Z Flip6 5G</h3>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <div class="product-media"><img src="images/imageDT/samsung1.png"
+                                    alt="Samsung Galaxy S24 5G" loading="lazy"></div>
+                                <h3>Samsung Galaxy S24 5G 8GB/256GB</h3>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <div class="product-media"><img
+                                    src="images/imageDT/samsung-galaxy-a16-8gb-128gb-2-.png" alt="Samsung Galaxy M55 5G"
+                                    loading="lazy"></div>
+                                <h3>Samsung Galaxy M55 5G 8GB/256GB</h3>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                        </div> <!-- Danh mục sản phẩm  OPPO-->
+                        <div class="category-right-top-item" id="OP">
+                            <p>OPPO</p>
+                        </div>
+                        <div class="category-right-content row">
+                            <div class="category-right-content-item">
+                                <span class="product-badge badge-new">New</span>
+                                <div class="product-media"><img src="images/imageDT/oppo1.png"
+                                    alt="OPPO Find X8 5G" loading="lazy"></div>
+                                <h3>OPPO Find X8 5G 16GB/512GB</h3>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <div class="product-media"><img src="images/imageDT/oppo2.png"
+                                    alt="OPPO Find X8 Pro 5G" loading="lazy"></div>
+                                <h3>OPPO Find X8 Pro 5G 16GB/512GB</h3>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <div class="product-media"><img src="images/imageDT/oppo3.png" alt="OPPO A58"
+                                        loading="lazy"></div>
+                                <h3>OPPO A58 8GB/128GB</h3>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <span class="product-badge badge-promo">Trả góp 0%</span>
+                                <div class="product-media"><img src="images/imageDT/oppo4.png" alt="OPPO Find N3 5G"
+                                        loading="lazy"></div>
+                                <h3>OPPO Find N3 5G 16GB/512GB</h3>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <div class="product-media"><img src="images/imageDT/oppo1.png" alt="OPPO Find X8 Pro 5G"
+                                        loading="lazy"></div>
+                                <h3>OPPO Find X8 Pro 5G 16GB/256GB</h3>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <div class="product-media"><img src="images/imageDT/oppo2.png"
+                                    alt="OPPO Find X8 Pro 5G" loading="lazy"></div>
+                                <h3>OPPO Find X8 Pro 5G 16GB/512GB</h3>
+                                <p>16.790.000 đồng</p>
+                            </div>
+                        </div> <!-- Danh mục sản phẩm  IPhone-->
+                        <div class="category-right-top-item" id="AP">
+                            <p>IPHONE</p>
+                        </div>
+                        <div class="category-right-content row">
+                            <div class="category-right-content-item">
+                                <span class="product-badge badge-hot">Hot</span>
+                                <div class="product-media"><img src="images/imageDT/ip1.png" alt="iPhone 16 Pro Max"
+                                        loading="lazy"></div>
+                                <h3>iPhone 16 Pro Max</h3>
+                                <p>34.090.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <div class="product-media"><img src="images/imageDT/ip2.png" alt="iPhone 16 Plus"
+                                        loading="lazy"></div>
+                                <h3>iPhone 16 Plus</h3>
+                                <p>25.490.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <div class="product-media"><img src="images/imageDT/ip3.png" alt="iPhone 16 Pro"
+                                        loading="lazy"></div>
+                                <h3>iPhone 16 Pro</h3>
+                                <p>28.590.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <div class="product-media"><img src="images/imageDT/ip4.png" alt="iPhone 15 Pro Max"
+                                        loading="lazy"></div>
+                                <h3>iPhone 15 Pro Max</h3>
+                                <p>29.590.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <span class="product-badge badge-discount">-12%</span>
+                                <div class="product-media"><img src="images/imageDT/ip5.png" alt="iPhone 14 Plus"
+                                        loading="lazy"></div>
+                                <h3>iPhone 14 Plus</h3>
+                                <p>19.990.000 đồng</p>
+                            </div>
+                            <div class="category-right-content-item">
+                                <div class="product-media"><img src="images/imageDT/ip6.png" alt="iPhone 15 Pro"
+                                        loading="lazy"></div>
+                                <h3>iPhone 15 Pro</h3>
+                                <p>27.990.000 đồng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <section class="app-container">
         <p>Tải ứng dụng DCShop tại</p>
-        <div class="app-google"> <a href="https://www.apple.com/vn/app-store/"><img src="images/appstore.png"></a> <a
-                href="https://play.google.com/store"><img src="images/chplay.png"></a> </div>
-        <p>Nhận tin nhắn của DCShop tại</p> <input type="email" placeholder="Nhập email của bạn tại đây..." aria-label="Đăng ký email">
+        <div class="app-google"> <a href="https://www.apple.com/vn/app-store/"><img src="images/appstore.png"
+                    alt="Tải trên App Store"></a> <a href="https://play.google.com/store"><img src="images/chplay.png"
+                    alt="Tải trên Google Play"></a> </div>
+        <p>Nhận tin nhắn của DCShop tại</p> <input type="email" placeholder="Nhập email của bạn tại đây..."
+            aria-label="Đăng ký email">
     </section>
     <footer>
     <div class="footer-top">
-        <li><a href="#">Liên hệ</a></li>
-        <li><a href="#">Tuyển dụng</a></li>
-        <li><a href="gioithieu.html">Giới thiệu</a></li>
-        <li>
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-youtube"></a>
-        </li>
+        <div>
+            <h3>Về DCShop</h3>
+            <ul>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Tin tức</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Hỗ Trợ Khách Hàng</h3>
+            <ul>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+                <li><a href="#">Chính sách bảo hành</a></li>
+                <li><a href="#">Chính sách trả hàng</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Chính Sách</h3>
+            <ul>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chính sách vận chuyển</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Kết Nối Với Chúng Tôi</h3>
+            <p style="font-size: 14px; margin-bottom: 15px;">Theo dõi DCShop trên các mạng xã hội</p>
+            <div style="display: flex; gap: 8px;">
+                <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                <a href="#" class="fab fa-youtube" aria-label="YouTube"></a>
+                <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
+            </div>
+            <h3 style="margin-top: 20px;">Liên Hệ</h3>
+            <p style="font-size: 14px;">📞 0123 456 789</p>
+            <p style="font-size: 14px;">✉️ support@dcshop.vn</p>
+        </div>
     </div>
-
     <div class="footer-center" id="tintuc">
-        <p>Cửa hàng DCShop với số đăng ký kinh doanh: 0120345678 <br>
-            Địa chỉ đăng ký: 32 Lê Lợi, P. Phú Hội, Thành phố Huế - 0123 456 789.<br>
-            Đặt hàng online: <b>0123 456 789</b>.
-        </p>
+        <p><b>Cửa hàng DCShop</b></p>
+        <p>Số đăng ký kinh doanh: 0120345678</p>
+        <p>Địa chỉ: 32 Lê Lợi, P. Phú Hội, Thành phố Huế</p>
+        <p>Điện thoại: 0123 456 789 | Email: support@dcshop.vn</p>
     </div>
     <div class="footer-bottom">
-        ©DCShop All rights reserved
+        <p>© 2025 DCShop. Tất cả quyền được bảo lưu.</p>
     </div>
 </footer>
+    <script src="main.js" defer></script>
 </body>
-<script src="main.js" defer></script>
 
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kết quả tìm kiếm sản phẩm chính hãng - DCShop.">
+    <title>Tìm kiếm sản phẩm - DCShop</title>
+    <link rel="icon" type="image/png" href="images/dcshoplogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content">Bỏ qua đến nội dung chính</a>
+    <header>
+        <!-- Sẽ được thay thế bởi header partial khi build -->
+    </header>
+
+    <main id="main-content">
+        <section class="category">
+            <div class="container">
+                <div class="category-top row">
+                    <a href="index.html">Trang chủ</a> <span>&#10230; </span>
+                    <p class="breadcrumb-current">Tìm kiếm</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="category-left row">
+                        <ul>
+                            <li class="category-left-li"><a href="category.html?cat=dt">Điện thoại</a>
+                                <ul>
+                                    <li><a href="category.html?cat=dt#SS">Samsung</a></li>
+                                    <li><a href="category.html?cat=dt#OP">Oppo</a></li>
+                                    <li><a href="category.html?cat=dt#AP">Iphone</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-left-li"><a href="category.html?cat=lt">Laptop</a></li>
+                            <li class="category-left-li"><a href="category.html?cat=pc">PC &amp; Màn hình</a></li>
+                        </ul>
+
+                        <div class="filter-box" style="margin-top: 20px; background: white; border-radius: 8px; padding: 16px; box-shadow: var(--shadow-sm);">
+                            <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--gray-200); color: var(--primary);"><i class="fas fa-filter"></i> Bộ lọc tìm kiếm</h3>
+
+                            <div class="filter-group" style="margin-bottom: 15px;">
+                                <h4 style="font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text);">Danh mục</h4>
+                                <div style="display: flex; flex-direction: column; gap: 6px;">
+                                    <label style="font-size: 12px; display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text);">
+                                        <input type="radio" name="filter-cat" value="all" checked> Tất cả danh mục
+                                    </label>
+                                    <label style="font-size: 12px; display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text);">
+                                        <input type="radio" name="filter-cat" value="dt"> Điện thoại
+                                    </label>
+                                    <label style="font-size: 12px; display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text);">
+                                        <input type="radio" name="filter-cat" value="lt"> Laptop
+                                    </label>
+                                    <label style="font-size: 12px; display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text);">
+                                        <input type="radio" name="filter-cat" value="pc"> PC &amp; Màn hình
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="filter-group">
+                                <h4 style="font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text);">Mức giá</h4>
+                                <div style="display: flex; flex-direction: column; gap: 6px;">
+                                    <label style="font-size: 12px; display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text);">
+                                        <input type="radio" name="filter-price" value="all" checked> Tất cả mức giá
+                                    </label>
+                                    <label style="font-size: 12px; display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text);">
+                                        <input type="radio" name="filter-price" value="under-15"> Dưới 15 triệu
+                                    </label>
+                                    <label style="font-size: 12px; display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text);">
+                                        <input type="radio" name="filter-price" value="15-25"> 15 - 25 triệu
+                                    </label>
+                                    <label style="font-size: 12px; display: flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text);">
+                                        <input type="radio" name="filter-price" value="over-25"> Trên 25 triệu
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-right row">
+                        <div class="category-right-top" style="flex-direction: column; align-items: flex-start; gap: 8px; border-bottom: 1px solid var(--gray-200); padding-bottom: 15px; width: 100%;">
+                            <h1 id="search-title" style="font-size: 22px; font-weight: 700; color: var(--text); margin: 0;">Kết quả tìm kiếm</h1>
+                            <p id="search-count" style="font-size: 14px; color: var(--gray-600); margin: 0;"></p>
+                        </div>
+
+                        <div class="category-right-content row" id="search-results-grid" style="margin-top: 20px; min-height: 300px;">
+                            <!-- Lưới sản phẩm động do JS chèn -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Sẽ được thay thế bởi footer partial khi build -->
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

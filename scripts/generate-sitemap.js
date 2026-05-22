@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require("path");
 
 const baseUrl = "https://chaudan0304.github.io/tieuluan_web/";
 const files = fs.readdirSync(process.cwd()).filter((f) => f.endsWith(".html"));

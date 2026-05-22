@@ -1,0 +1,506 @@
+[
+  {
+    "id": "dt_1",
+    "name": "Samsung Galaxy S24 Ultra 5G",
+    "price": "16.790.000",
+    "img": "images/imageDT/samsung-galaxy-s24-ultra-5g-14-.png",
+    "cat": "dt"
+  },
+  {
+    "id": "dt_2",
+    "name": "Samsung Galaxy S24 Ultra 5G",
+    "price": "16.790.000",
+    "img": "images/imageDT/samsung-galaxy-a16-8gb-128gb-2-.png",
+    "cat": "dt"
+  },
+  {
+    "id": "dt_3",
+    "name": "Samsung Galaxy A16 5G",
+    "price": "16.790.000",
+    "img": "images/imageDT/samsung-galaxy-a16-5g-3-.png",
+    "cat": "dt"
+  },
+  {
+    "id": "dt_4",
+    "name": "Samsung Galaxy Z Flip6 5G",
+    "price": "16.790.000",
+    "img": "images/imageDT/samsung2.png",
+    "cat": "dt"
+  },
+  {
+    "id": "dt_5",
+    "name": "Samsung Galaxy S24 5G 8GB/256GB",
+    "price": "16.790.000",
+    "img": "images/imageDT/samsung1.png",
+    "cat": "dt"
+  },
+  {
+    "id": "dt_6",
+    "name": "Samsung Galaxy M55 5G 8GB/256GB",
+    "price": "16.790.000",
+    "img": "images/imageDT/samsung-galaxy-a16-8gb-128gb-2-.png",
+    "cat": "dt"
+  },
+  {
+    "id": "dt_7",
+    "name": "OPPO Find X8 5G 16GB/512GB",
+    "price": "16.790.000",
+    "img": "images/imageDT/oppo1.png",
+    "cat": "dt"
+  },
+  {
+    "id": "dt_8",
+    "name": "OPPO Find X8 Pro 5G 16GB/512GB",
+    "price": "16.790.000",
+    "img": "images/imageDT/oppo2.png",
+    "cat": "dt"
+  },
+  {
+    "id": "dt_9",
+    "name": "OPPO Find X8 Pro 5G 16GB/512GB",
+    "price": "16.790.000",
+    "img": "images/imageDT/oppo2.png",
+    "cat": "dt"
+  },
+  {
+    "id": "lt_1",
+    "name": "HP 15 fd0303TU i3 1315U (A2NL4PA)",
+    "price": "16.790.000",
+    "img": "images/imageLT/lt1.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_2",
+    "name": "HP 15 fc0085AU R5 7430U (A6VV8PA)",
+    "price": "16.790.000",
+    "img": "images/imageLT/lt2.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_3",
+    "name": "HP 245 G10 R5 7530U (A20TDPT)",
+    "price": "16.790.000",
+    "img": "images/imageLT/lt3.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_4",
+    "name": "HP 15 fd0234TU i5 1334U (9Q969PA)",
+    "price": "16.790.000",
+    "img": "images/imageLT/lt1.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_5",
+    "name": "HP 240 G9 i5 1235U (AG2J7AT)",
+    "price": "16.790.000",
+    "img": "images/imageLT/lt2.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_6",
+    "name": "HP Pavilion 15 eg3093TU i5 1335U (8C5L4PA)",
+    "price": "16.790.000",
+    "img": "images/imageLT/lt3.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_7",
+    "name": "HP Gaming VICTUS 15 fb1022AX R5 7535HS",
+    "price": "16.790.000",
+    "img": "images/imageLT/lt1.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_8",
+    "name": "HP Gaming VICTUS 15 fa1139TX i5 12450H",
+    "price": "16.790.000",
+    "img": "images/imageLT/lt2.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_9",
+    "name": "HP 240 G9 i5 1235U (9T2G2PT)",
+    "price": "16.790.000",
+    "img": "images/imageLT/lt3.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_10",
+    "name": "Dell Inspiron 15 3520 i5 1235U (N5I5052W1)",
+    "price": "16.790.000",
+    "img": "images/imageLT/dell1.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_11",
+    "name": "Dell Inspiron 15 3520 i5 1235U",
+    "price": "16.790.000",
+    "img": "images/imageLT/dell2.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_12",
+    "name": "Dell Inspiron 15 3520 i5 1235U (N3520-i5U165W11BLU-FP)",
+    "price": "16.790.000",
+    "img": "images/imageLT/dell3.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_13",
+    "name": "Dell Vostro 3530 i5 1335U (80GG93)",
+    "price": "16.790.000",
+    "img": "images/imageLT/dell1.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_14",
+    "name": "Dell Inspiron 15 3520 i5 1235U (71043883)",
+    "price": "16.790.000",
+    "img": "images/imageLT/dell2.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_15",
+    "name": "Dell Inspiron 15 3530 i5 1334U (N5I5340W1)",
+    "price": "16.790.000",
+    "img": "images/imageLT/dell3.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_16",
+    "name": "Dell Inspiron 16 5640 Core 7 150U (KHPF5)",
+    "price": "16.790.000",
+    "img": "images/imageLT/dell1.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_17",
+    "name": "Dell Inspiron 15 3520 i5 1235U (71027003)",
+    "price": "16.790.000",
+    "img": "images/imageLT/dell2.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_18",
+    "name": "Dell Vostro 15 3520 i5 1235U (V3520-i5U165W11GRU)",
+    "price": "16.790.000",
+    "img": "images/imageLT/dell3.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_19",
+    "name": "MSI Gaming GF63 Thin 12VE i5 12450H (460VN)",
+    "price": "16.790.000",
+    "img": "images/imageLT/msi1.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_20",
+    "name": "MSI Gaming Thin 15 B12UCX i5 12450H (2046VN)",
+    "price": "16.790.000",
+    "img": "images/imageLT/msi2.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_21",
+    "name": "MSI Gaming Katana 15 B13UDXK i7 13620H (2077VN)",
+    "price": "16.790.000",
+    "img": "images/imageLT/msi3.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_22",
+    "name": "MSI Modern 14 C13M i5 1335U (611VN)",
+    "price": "16.790.000",
+    "img": "images/imageLT/msi1.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_23",
+    "name": "MSI Gaming Bravo 15 B7ED R5 7535HS (010VN)",
+    "price": "16.790.000",
+    "img": "images/imageLT/msi2.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_24",
+    "name": "MSI Gaming Cyborg 15 A13VEK i7 13620H (1423VN)",
+    "price": "16.790.000",
+    "img": "images/imageLT/msi3.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_25",
+    "name": "MSI Gaming Katana 15 B13VFK i7 13620H (676VN)",
+    "price": "16.790.000",
+    "img": "images/imageLT/msi1.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_26",
+    "name": "MSI Gaming Katana A15 AI B8VG R7 8845HS (465VN)",
+    "price": "16.790.000",
+    "img": "images/imageLT/msi2.png",
+    "cat": "lt"
+  },
+  {
+    "id": "lt_27",
+    "name": "MSI Gaming Stealth 14 AI Studio A1VFG Ultra 7 155H",
+    "price": "18.790.000",
+    "img": "images/imageLT/msi3.png",
+    "cat": "lt"
+  },
+  {
+    "id": "pc_1",
+    "name": "PC HANCOM PROJECT ZERO WHITE (INTEL i5 14400f vga rtx 4070)",
+    "price": "16.790.000",
+    "img": "images/imagePC/PC/sp1_pc_hacom_project_zero_white_intel_i5_14400f_vga_rtx_4070xx.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_2",
+    "name": "PC HACOM PROJECT ZERO WHITE ( Intel i5 VGA RTX 4070 )",
+    "price": "16.790.000",
+    "img": "images/imagePC/PC/spc2pc-hacom-project-zero-white-intel-i5-vga-rtx-4070-.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_3",
+    "name": "Super halogen (98000 AMD- 40990)",
+    "price": "16.790.000",
+    "img": "images/imagePC/PC/sp3_super-halogen-98000-amd-40990-.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_4",
+    "name": "Halogen super Black (4080GTX-AMD 5900000)",
+    "price": "16.790.000",
+    "img": "images/imagePC/PC/spc4-halogen-super-black-4080gtx-amd-5900000-.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_5",
+    "name": "HACOM x THERMALTAKE APOLLO i11-Black Myth Wukong",
+    "price": "16.790.000",
+    "img": "images/imagePC/PC/spc5hacom-x-thermaltake-apollo-i11-black-myth-wukong.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_6",
+    "name": "PC HACOM 012 (Intel i5 12400F-VGA RX 6600)",
+    "price": "16.790.000",
+    "img": "images/imagePC/PC/spc6pc-hacom-012-intel-i5-12400f-vga-rx-6600-.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_7",
+    "name": "PC HACOM 007 (Intel i5 12400F- VGA RTX 3050)",
+    "price": "16.790.000",
+    "img": "images/imagePC/PC/spc7pc-hacom-007-intel-i5-12400f-vga-rtx-3050-powered-by-msi.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_8",
+    "name": "PC HACOM 007 (Intel i5 12700F- VGA RTX 4050)",
+    "price": "16.790.000",
+    "img": "images/imagePC/PC/spc8pc-hacom-007-intel-i5-12700f-vga-rtx-4050-powered.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_9",
+    "name": "HACOM SNIPER S26 Pink (i5 13400F-GTX 1660 Super)",
+    "price": "16.790.000",
+    "img": "images/imagePC/PC/spc9hacom-sniper-s26-pink-i5-13400f-gtx-1660-super-.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_10",
+    "name": "Màn hình Samsung ViewFinity S8 LS32B800PXEXXV",
+    "price": "16.790.000",
+    "img": "images/imagePC/Samsung/ss1man-hinh-samsung-viewfinity-s8-ls32b800pxexxv-32.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_11",
+    "name": "Màn hình Samsung Thông Minh M7 M70D LS32DM700UEXXV",
+    "price": "16.790.000",
+    "img": "images/imagePC/Samsung/ss2man-hinh-samsung-thong-minh-m7-m70d-ls32dm700uexxv.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_12",
+    "name": "Màn hình Samsung LS22C310EAEXXV",
+    "price": "16.790.000",
+    "img": "images/imagePC/Samsung/ss3man-hinh-samsung-ls22c310eaexxv-22.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_13",
+    "name": "Màn hình Samsung Odyssey G8 LS34DG850SEXXV",
+    "price": "16.790.000",
+    "img": "images/imagePC/Samsung/ss4man-hinh-samsung-odyssey-g8-ls34dg850sexxv-34.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_14",
+    "name": "Màn hình Samsung Odyssey G5 G50D LS32DG502EEXXV",
+    "price": "16.790.000",
+    "img": "images/imagePC/Samsung/ss5man-hinh-samsung-odyssey-g5-g50d-ls32dg502eexxv.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_15",
+    "name": "Màn hình Samsung Odyssey OLED LS49CG954SEXXV",
+    "price": "16.790.000",
+    "img": "images/imagePC/Samsung/ss6man-hinh-samsung-odyssey-oled-ls49cg954sexxv.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_16",
+    "name": "Màn hình Samsung LS24C330GAEXXV",
+    "price": "16.790.000",
+    "img": "images/imagePC/Samsung/ss7man-hinh-samsung-ls24c330gaexxv-23.8.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_17",
+    "name": "Màn hình Samsung Odyssey G5 G55C LS32CG552EEXXV",
+    "price": "16.790.000",
+    "img": "images/imagePC/Samsung/ss8man-hinh-samsung-odyssey-g5-g55c-ls32cg552eexxv-32.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_18",
+    "name": "Màn Hình Samsung LS34C500GAEXXV",
+    "price": "16.790.000",
+    "img": "images/imagePC/Samsung/ss9man-hinh-samsung-ls34c500gaexxv-34-inch.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_19",
+    "name": "Màn hình LG 24MR400-B",
+    "price": "16.790.000",
+    "img": "images/imagePC/LG/lg1man-hinh-lg-24mr400-b-23.8.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_20",
+    "name": "Màn hình LG UltraGear 24GS65F-B",
+    "price": "16.790.000",
+    "img": "images/imagePC/LG/lg2man-hinh-lg-ultragear-24gs65f-b-23.8.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_21",
+    "name": "Màn Hình LG UltraWide 34WR55QK-B",
+    "price": "16.790.000",
+    "img": "images/imagePC/LG/lg3man-hinh-lg-ultrawide-34wr55qk-b-34.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_22",
+    "name": "Màn hình Gaming LG 27GR93U-B",
+    "price": "16.790.000",
+    "img": "images/imagePC/LG/lg4man-hinh-gaming-lg-27gr93u-b-27.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_23",
+    "name": "Màn hình LG 24QP500-B (23.8 inch)",
+    "price": "16.790.000",
+    "img": "images/imagePC/LG/lg5man-hinh-lg-24qp500-b-23.8-inch.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_24",
+    "name": "Màn hình LG UltraGear 27GS85Q-B (27 inch)",
+    "price": "16.790.000",
+    "img": "images/imagePC/LG/lg6man-hinh-lg-ultragear-27gs85q-b-27.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_25",
+    "name": "Màn hình LG UltraGear 27GS60F-B (27 inch)",
+    "price": "16.790.000",
+    "img": "images/imagePC/LG/lg7man-hinh-lg-ultragear-27gs60f-b-27.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_26",
+    "name": "Màn hình LG 27UP850N-W",
+    "price": "16.790.000",
+    "img": "images/imagePC/LG/lg8man-hinh-lg-27up850n-w.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_27",
+    "name": "Màn hình LG 34GP63A-B (34 inch)",
+    "price": "16.790.000",
+    "img": "images/imagePC/LG/lg9man-hinh-lg-34gp63a-b-34.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_28",
+    "name": "Màn hình ASUS ROG Strix XG27WCS (27 inch)",
+    "price": "16.790.000",
+    "img": "images/imagePC/Asus/mh1man-hinh-asus-rog-strix-xg27wcs-27-inch-.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_29",
+    "name": "Màn hình ASUS Xperis Strix XG27WCS (27 inch)",
+    "price": "16.790.000",
+    "img": "images/imagePC/Asus/mh2man-hinh-asus-xperis-strix-xg27wcs-27-inch-.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_30",
+    "name": "Màn hình Asus ProArt PA248QV",
+    "price": "16.790.000",
+    "img": "images/imagePC/Asus/mh3man-hinh-asus-proart-pa248qv.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_31",
+    "name": "Màn hình ASUS VY249HGR (23.8 inch)",
+    "price": "16.790.000",
+    "img": "images/imagePC/Asus/mh4man-hinh-asus-vy249hgr-23.8-.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_32",
+    "name": "Màn hình ASUS ROG Strix PG32UCDP (31.5 inch)",
+    "price": "16.790.000",
+    "img": "images/imagePC/Asus/mh5man-hinh-asus-rog-strix-pg32ucdp-31.5-.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_33",
+    "name": "Màn hình ASUS ROG Strix XG279Q (27 inch)",
+    "price": "16.790.000",
+    "img": "images/imagePC/Asus/mh6man-hinh-asus-rog-strix-xg279q-27-.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_34",
+    "name": "Màn hình ASUS ROG Strix XG27WCS (27 inch)",
+    "price": "16.790.000",
+    "img": "images/imagePC/Asus/mh7man-hinh-asus-rog-strix-xg27wcs-27-inch-.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_35",
+    "name": "Màn hình ASUS ROG XKEAN Strix XG279Q (34 inch)",
+    "price": "16.790.000",
+    "img": "images/imagePC/Asus/mh8man-hinh-asus-rog-xkean-strix-xg279q-34-.png",
+    "cat": "pc"
+  },
+  {
+    "id": "pc_36",
+    "name": "Màn hình ASUS ProArt PA279CRV (27 inch)",
+    "price": "16.790.000",
+    "img": "images/imagePC/Asus/mh9man-hinh-asus-proart-pa279crv-27.png",
+    "cat": "pc"
+  }
+]
